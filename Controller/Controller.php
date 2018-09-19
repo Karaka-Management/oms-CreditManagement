@@ -12,7 +12,7 @@
  */
 declare(strict_types=1);
 
-namespace Modules\CreditManagement;
+namespace Modules\CreditManagement\Controller;
 
 use phpOMS\Message\RequestAbstract;
 use phpOMS\Message\ResponseAbstract;
@@ -27,7 +27,7 @@ use phpOMS\Module\WebInterface;
  * @link       http://website.orange-management.de
  * @since      1.0.0
  */
-final class Controller extends ModuleAbstract implements WebInterface
+class Controller extends ModuleAbstract implements WebInterface
 {
 
     /**
@@ -36,7 +36,7 @@ final class Controller extends ModuleAbstract implements WebInterface
      * @var string
      * @since 1.0.0
      */
-    public const MODULE_PATH = __DIR__;
+    public const MODULE_PATH = __DIR__ . '/../';
 
     /**
      * Module name.
